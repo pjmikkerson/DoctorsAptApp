@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Reflection.Metadata.Ecma335;
 
 namespace DoctorsAptApp
 {
@@ -23,7 +19,7 @@ namespace DoctorsAptApp
             get => patient;
             set => patient = value;
         }
-        public DateTime DateTime {
+        public DateTime Time {
             get=> dateTime; 
             set => dateTime = value; }
 
@@ -31,7 +27,14 @@ namespace DoctorsAptApp
 
         public override string ToString()
         {
-            return $"{patient.Name} - {dateTime}";
+            if (patient != null)
+            {
+                return $"{patient.Name} - {dateTime}";
+            }
+            else
+            {
+                return $"{dateTime}";
+            }
         }
 
     }
