@@ -1,6 +1,6 @@
 ﻿namespace FormApp
 {
-    partial class Form1
+    partial class patientForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,98 +28,120 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.nameLabel = new System.Windows.Forms.Label();
+            this.ageLabel = new System.Windows.Forms.Label();
+            this.severityLabel = new System.Windows.Forms.Label();
+            this.insuranceLabel = new System.Windows.Forms.Label();
+            this.nameTextbox = new System.Windows.Forms.TextBox();
+            this.ageTextbox = new System.Windows.Forms.TextBox();
+            this.severityTextbox = new System.Windows.Forms.TextBox();
+            this.insuranceCheckbox = new System.Windows.Forms.CheckBox();
+            this.submitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // nameLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.nameLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Location = new System.Drawing.Point(8, 12);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(35, 13);
+            this.nameLabel.TabIndex = 0;
+            this.nameLabel.Text = "Name";
             // 
-            // label2
+            // ageLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.ageLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.ageLabel.AutoSize = true;
+            this.ageLabel.Location = new System.Drawing.Point(8, 45);
+            this.ageLabel.Name = "ageLabel";
+            this.ageLabel.Size = new System.Drawing.Size(26, 13);
+            this.ageLabel.TabIndex = 1;
+            this.ageLabel.Text = "Age";
             // 
-            // label3
+            // severityLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 79);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.severityLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.severityLabel.AutoSize = true;
+            this.severityLabel.Location = new System.Drawing.Point(8, 82);
+            this.severityLabel.Name = "severityLabel";
+            this.severityLabel.Size = new System.Drawing.Size(45, 13);
+            this.severityLabel.TabIndex = 2;
+            this.severityLabel.Text = "Severity";
             // 
-            // label4
+            // insuranceLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 135);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "label4";
+            this.insuranceLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.insuranceLabel.AutoSize = true;
+            this.insuranceLabel.Location = new System.Drawing.Point(8, 129);
+            this.insuranceLabel.Name = "insuranceLabel";
+            this.insuranceLabel.Size = new System.Drawing.Size(54, 13);
+            this.insuranceLabel.TabIndex = 3;
+            this.insuranceLabel.Text = "Insurance";
             // 
-            // textBox1
+            // nameTextbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(100, 9);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.nameTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.nameTextbox.Location = new System.Drawing.Point(100, 12);
+            this.nameTextbox.Name = "nameTextbox";
+            this.nameTextbox.Size = new System.Drawing.Size(274, 20);
+            this.nameTextbox.TabIndex = 4;
             // 
-            // textBox2
+            // ageTextbox
             // 
-            this.textBox2.Location = new System.Drawing.Point(100, 42);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
+            this.ageTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ageTextbox.Location = new System.Drawing.Point(100, 45);
+            this.ageTextbox.Name = "ageTextbox";
+            this.ageTextbox.Size = new System.Drawing.Size(274, 20);
+            this.ageTextbox.TabIndex = 5;
             // 
-            // textBox3
+            // severityTextbox
             // 
-            this.textBox3.Location = new System.Drawing.Point(100, 79);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
+            this.severityTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.severityTextbox.Location = new System.Drawing.Point(100, 82);
+            this.severityTextbox.Name = "severityTextbox";
+            this.severityTextbox.Size = new System.Drawing.Size(274, 20);
+            this.severityTextbox.TabIndex = 6;
             // 
-            // checkBox1
+            // insuranceCheckbox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(100, 135);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 7;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.insuranceCheckbox.AutoSize = true;
+            this.insuranceCheckbox.Location = new System.Drawing.Point(100, 135);
+            this.insuranceCheckbox.Name = "insuranceCheckbox";
+            this.insuranceCheckbox.Size = new System.Drawing.Size(91, 17);
+            this.insuranceCheckbox.TabIndex = 7;
+            this.insuranceCheckbox.Text = "Check for yes";
+            this.insuranceCheckbox.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // submitButton
+            // 
+            this.submitButton.Location = new System.Drawing.Point(100, 171);
+            this.submitButton.Name = "submitButton";
+            this.submitButton.Size = new System.Drawing.Size(75, 23);
+            this.submitButton.TabIndex = 8;
+            this.submitButton.Text = "Submit";
+            this.submitButton.UseVisualStyleBackColor = true;
+            this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
+            // 
+            // patientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(395, 334);
+            this.Controls.Add(this.submitButton);
+            this.Controls.Add(this.insuranceCheckbox);
+            this.Controls.Add(this.severityTextbox);
+            this.Controls.Add(this.ageTextbox);
+            this.Controls.Add(this.nameTextbox);
+            this.Controls.Add(this.insuranceLabel);
+            this.Controls.Add(this.severityLabel);
+            this.Controls.Add(this.ageLabel);
+            this.Controls.Add(this.nameLabel);
+            this.Name = "patientForm";
+            this.Text = "Patient Information";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -127,14 +149,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.Label ageLabel;
+        private System.Windows.Forms.Label severityLabel;
+        private System.Windows.Forms.Label insuranceLabel;
+        private System.Windows.Forms.TextBox nameTextbox;
+        private System.Windows.Forms.TextBox ageTextbox;
+        private System.Windows.Forms.TextBox severityTextbox;
+        private System.Windows.Forms.CheckBox insuranceCheckbox;
+        private System.Windows.Forms.Button submitButton;
     }
 }
 
