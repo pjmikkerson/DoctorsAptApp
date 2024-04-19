@@ -4,11 +4,13 @@ namespace DoctorsForms
 {
     public partial class PatientForm : Form
     {
-        CreateApptPriorityQueue queue;
+        public static CreateApptPriorityQueue queue;
+        public static ScheduleForm scheduleForm;
         public PatientForm()
         {
             InitializeComponent();
             queue = CreateApptPriorityQueue.Instance;
+            
 
 
         }
@@ -17,7 +19,7 @@ namespace DoctorsForms
         {
 
             Patient patient = new();
-            string message = "";
+            string message;
             try
             {
                 var name = nameTextbox.Text;
@@ -56,9 +58,25 @@ namespace DoctorsForms
 
         private void scheduleButton_Click(object sender, EventArgs e)
         {
-            ScheduleForm form = new(queue);
-            form.Show();
+            if (scheduleForm == null || scheduleForm.IsDisposed)
+            {
+                scheduleForm = new ScheduleForm(queue);
+                scheduleForm.FormClosed += (s, args) => this.Close();
+            }
+
+            AddDataToScheduleForm(queue);
+
             this.Hide();
+            
+            scheduleForm.Show();
+        }
+
+        private void AddDataToScheduleForm(CreateApptPriorityQueue newData)
+        {
+            if (scheduleForm != null && !scheduleForm.IsDisposed)
+            {
+                scheduleForm.UpdateSchedule(newData); 
+            }
         }
     }
 }

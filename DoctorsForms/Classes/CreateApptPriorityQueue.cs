@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 namespace DoctorsAptApp
 {
-    public class  CreateApptPriorityQueue
+    public class CreateApptPriorityQueue
     {
         private PriorityQueue<Patient, int> patients;
         private int count = 0;
@@ -60,7 +55,7 @@ namespace DoctorsAptApp
         }
 
 
-       
+
 
         public override string ToString()
         {
