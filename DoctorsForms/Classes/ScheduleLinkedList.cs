@@ -31,6 +31,8 @@ namespace DoctorsAptApp
                     
                 schedule.AddLast(appointment);
             }
+
+
         }
 
         private DateTime GetNextAvailableAppointmentTime(DateTime lastAppointmentTime)
@@ -81,6 +83,12 @@ namespace DoctorsAptApp
                 yield return item;
             }
         }
+
+       /* public void Resort()
+        {
+            schedule = new LinkedList<Appointment>(schedule.OrderBy(x => x.Time));
+
+        }*/
 
         public override string ToString()
         {

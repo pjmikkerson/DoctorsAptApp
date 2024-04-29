@@ -38,6 +38,7 @@
             insuranceCheckbox = new CheckBox();
             addPatientButton = new Button();
             scheduleButton = new Button();
+            showQueueButton = new Button();
             SuspendLayout();
             // 
             // nameLabel
@@ -131,13 +132,25 @@
             scheduleButton.TabIndex = 6;
             scheduleButton.Text = "Create Schedule";
             scheduleButton.UseVisualStyleBackColor = true;
-            scheduleButton.Click += this.scheduleButton_Click;
+            scheduleButton.Click += scheduleButton_Click;
+            // 
+            // showQueueButton
+            // 
+            showQueueButton.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            showQueueButton.Location = new Point(25, 333);
+            showQueueButton.Name = "showQueueButton";
+            showQueueButton.Size = new Size(100, 34);
+            showQueueButton.TabIndex = 7;
+            showQueueButton.Text = "Show Queue";
+            showQueueButton.UseVisualStyleBackColor = true;
+            showQueueButton.Click += showQueueButton_Click;
             // 
             // PatientForm
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(434, 361);
+            ClientSize = new Size(434, 405);
+            Controls.Add(showQueueButton);
             Controls.Add(scheduleButton);
             Controls.Add(addPatientButton);
             Controls.Add(insuranceCheckbox);
@@ -168,5 +181,6 @@
         private CheckBox insuranceCheckbox;
         private Button addPatientButton;
         private Button scheduleButton;
+        private Button showQueueButton;
     }
 }

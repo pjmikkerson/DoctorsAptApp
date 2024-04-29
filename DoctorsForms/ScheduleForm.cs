@@ -5,7 +5,7 @@ namespace DoctorsForms
     public partial class ScheduleForm : Form
     {
 
-        private ScheduleLinkedList schedule;
+        private static ScheduleLinkedList schedule;
     
          CreateApptPriorityQueue queue;
         public ScheduleForm(CreateApptPriorityQueue queue)

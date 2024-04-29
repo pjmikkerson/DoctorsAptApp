@@ -1,6 +1,8 @@
-﻿namespace DoctorsAptApp
+﻿using System;
+
+namespace DoctorsAptApp
 {
-    internal class Patient
+    public class Patient
     {
         private string name;
         private int age;
@@ -58,16 +60,17 @@
 
         public Patient(string name, int age, int severity, bool insurance = false)
         {
-            this.name = name;
-            this.age = age;
-            this.severity = severity;
-            this.insurance = insurance;
+
+            Name = name;
+            Age = age;
+            Severity = severity;
+            Insurance = insurance;
             CalculatePriority();
         }
 
         private void CalculatePriority()
         {
-            this.priority = this.severity + (this.insurance ? 1 : 0);
+            priority = this.severity + (this.insurance ? 1 : 0);
         }
         
         
